@@ -1,0 +1,114 @@
+
+#main-container {
+  width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-page .nav-item {
+  margin: 30px;
+}
+
+.nav-bar {
+  background-color: #F4F2EB;
+  display: grid;
+  grid-template-columns: 10% 20% 60% 10%;
+  grid-template-rows: 50% 50%;
+}
+
+.home-page{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.nav-item {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-link-dot {
+  color: Black;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  padding: 0px 15px;
+  text-decoration: none;
+}
+
+.nav-link-dot:focus, .nav-link-dot:hover {
+    text-decoration: none;
+}
+
+
+.vl {
+  height: auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.46);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.company-info{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.content {
+  background-color: #CB0007;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 5% 10% 40% 15% 15% 10% 5%;
+}
+
+.bringing-people {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: #ffffff;
+}
+
+.bringing-people-one {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: #ffffff;
+}
+
+.mask-group{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #D8B243;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
+}
