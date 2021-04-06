@@ -13,8 +13,11 @@
 .nav-bar {
   background-color: #F4F2EB;
   display: grid;
-  grid-template-columns: 10% 20% 60% 10%;
+  grid-template-columns: 10% 20% 65% 5%;
   grid-template-rows: 50% 50%;
+  position: sticky;
+  top: 0;
+  z-index: 2
 }
 
 .home-page{
@@ -32,6 +35,7 @@
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
+  align-self: center;
 }
 
 .nav-link-dot {
@@ -39,6 +43,7 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   padding: 0px 15px;
   text-decoration: none;
+  opacity: 0.5;
 }
 
 .nav-link-dot:focus, .nav-link-dot:hover {
@@ -56,10 +61,18 @@
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+}
+
+.down-side {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-left: 5px;
   margin-bottom: 2px;
+}
+
+.right-side {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .company-info{
@@ -75,40 +88,84 @@
   background-color: #CB0007;
   height: auto;
   display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 5% 10% 40% 15% 15% 10% 5%;
 }
 
 .bringing-people {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
   color: #ffffff;
+  font-weight: 800;
+
 }
 
 .bringing-people-one {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
   color: #ffffff;
 }
 
+.img-grp{
+
+}
+
+.mask-group-man{
+  position: relative;
+  left: 300px;
+  bottom: 25px;
+
+}
+
 .mask-group{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  position: absolute;
+  z-index: 1;
 }
 
 .box{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-color: #D8B243;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  justify-self: end;
+  position: relative;
+  top: 225px;
+  left: 265px;
+  border-radius: 20px;
 }
+
+.content .m-5 .Portfolio{
+  background-color: #D8B243;
+  border-color: #D8B243;
+  color: black;
+}
+
+.main-second-block {
+  display: grid ;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.man-with-glass {
+  grid-column-start: 1;
+}
+
+.main-second-content  {
+  grid-column-start: 2;
+  align-self: end;
+}
+
+.main-second-content h2 {
+
+}
+
+.main-second-content p {
+
+}
+
+.footer{
+
+}
+
+.footer .heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.footer .extra-info {
+  opacity: 0.51;
+}
+
+/** Responsive **/
